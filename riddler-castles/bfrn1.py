@@ -6,6 +6,7 @@ Created on Mon Dec 14 18:34:04 2020
 """
 
 import csv
+import random
 
 def throwdown(generalA,generalB):
     pointsA = []
@@ -34,7 +35,13 @@ with open('castle-solutions-ZS-1.csv') as csvFile:
 
 
 
+allRecords = {}
+allVictories = {}
+totalVictories = {}
 
-        
+[A,B] = random.sample(range(len(allGenerals)),2)
+(recordA, recordB) = throwdown(allGenerals[A],allGenerals[B])
+
+# use sum() to find total points        
         
     
