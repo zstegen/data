@@ -37,11 +37,16 @@ with open('castle-solutions-ZS-1.csv') as csvFile:
 
 allRecords = {}
 allVictories = {}
+# need to intialize all victores as empty lists
 totalVictories = {}
+# need to initialize total victories as zeros
 
-[A,B] = random.sample(range(len(allGenerals)),2)
+[A,B] = sorted(random.sample(range(len(allGenerals)),2))
 (recordA, recordB) = throwdown(allGenerals[A],allGenerals[B])
+allRecords[str(A)+','+str(B)] = (recordA, recordB)
 
-# use sum() to find total points        
+# use sum() to dertmine winner
+
+if
         
     
