@@ -25,24 +25,27 @@ def throwdown(generalA,generalB):
             print('unexpected case!!!')
     return (pointsA,pointsB)
     
-allGenerals = []
-
-with open('castle-solutions-ZS-1.csv') as csvFile:
-    reader = csv.reader(csvFile)
-    next(reader)
-    for row in reader:
-        allGenerals.append([int(s) for s in row])
-
-
-
-allRecords = {}
-allVictories = [[] for general in allGenerals]
-totalVictories = [0]*len(allGenerals)
-
-[A,B] = sorted(random.sample(range(len(allGenerals)),2))
-(recordA, recordB) = throwdown(allGenerals[A],allGenerals[B])
-allRecords[str(A)+','+str(B)] = (recordA, recordB)
-
-# use sum() to dertmine winner
+def main():
         
-    
+    allGenerals = []
+
+    with open('castle-solutions-ZS-1.csv') as csvFile:
+        reader = csv.reader(csvFile)
+        next(reader)
+        for row in reader:
+            allGenerals.append([int(s) for s in row])
+
+
+
+    allRecords = {}
+    allVictories = [[] for general in allGenerals]
+    totalVictories = [0]*len(allGenerals)
+
+    [A,B] = sorted(random.sample(range(len(allGenerals)),2))
+    (recordA, recordB) = throwdown(allGenerals[A],allGenerals[B])
+    allRecords[str(A)+','+str(B)] = (recordA, recordB)
+
+    # use sum() to dertmine winner
+        
+if __name__ == "__main__":
+    main()
