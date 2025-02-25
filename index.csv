@@ -1,4 +1,5 @@
 subfolder_name,dataset_url,article_url
+trump-2-poll-issue-questions,https://github.com/fivethirtyeight/data/tree/master/trump-2-poll-issue-questions,https://abcnews.go.com/538/americans-voted-trump-support-agenda/story?id=119136603
 state-of-the-polls-2024,https://github.com/fivethirtyeight/data/tree/master/state-of-the-polls-2024,https://abcnews.go.com/538/2024-fewer-polls-higher-quality/story?id=115157919
 quiet-caucus-2024,https://github.com/fivethirtyeight/data/tree/master/quiet-caucus-2024,https://projects.fivethirtyeight.com/types-democrats-republicans-house-2024/
 congress-biden-score,https://github.com/fivethirtyeight/data/tree/master/congress-biden-score,https://abcnews.go.com/538/member-congress-voted-biden-2023/story?id=106718543
